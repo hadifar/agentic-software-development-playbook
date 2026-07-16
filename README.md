@@ -15,21 +15,6 @@ A practical guide to building software by collaborating with AI coding agents �
 
 Built with [Jekyll](https://jekyllrb.com/) and the [Just the Docs](https://just-the-docs.com/) theme.
 
-## Contents
-
-- **Intro** — what "vibe coding" and "agentic coding" mean
-- **Tools** — a comparison of the current agentic coding tool landscape
-- **Workflows** — patterns and best practices for working with coding agents
-- **Resources** — curated links for going deeper
-
-## Local development
-
-```bash
-bundle install --path vendor/bundle
-bundle exec jekyll serve
-```
-
-Then open http://localhost:4000/vibe-coding-best-practices/
 
 ## Contributing
 
@@ -44,7 +29,12 @@ Anything you think is missing is welcome!
    ```bash
    git checkout -b my-change
    ```
-3. **Install dependencies and run the site locally** (see [Local development](#local-development) above) so you can preview your edits at http://localhost:4000/vibe-coding-best-practices/.
+3. **Install dependencies and run the site locally** so you can preview your edits.
+   ```bash
+   bundle install --path vendor/bundle
+   bundle exec jekyll serve
+   ```
+   Then open http://localhost:4000/vibe-coding-best-practices/
 4. **Edit or add a page** under [`docs/`](docs). Pages are Markdown files with Just the Docs front matter, for example:
    ```yaml
    ---
