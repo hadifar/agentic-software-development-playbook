@@ -19,6 +19,10 @@ nav_external_links:
   - title: GitHub
     url: https://github.com/hadifar/vibe-coding-best-practices
 
+aux_links:
+  "Home":
+    - "/vibe-coding-best-practices/"
+
 plugins:
   - jekyll-seo-tag
 

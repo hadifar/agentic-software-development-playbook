@@ -3,6 +3,7 @@ title: YC guide to vibe coding
 parent: Resources
 nav_order: 1
 description: "YC guide on practical vibe-coding technique."
+layout: minimal
 ---
 
 # YC Guide to Vibe Coding

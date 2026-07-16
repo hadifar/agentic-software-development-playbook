@@ -1,0 +1,19 @@
+<div id="main-header" class="main-header">
+  {% if site.search_enabled != false %}
+    {% include components/search_header.html %}
+  {% else %}
+    <div></div>
+  {% endif %}
+  {% include header_custom.html %}
+  {% assign nav_enabled = false %}
+  {% if page.nav_enabled == true %}
+    {% assign nav_enabled = true %}
+  {% elsif layout.nav_enabled == true and page.nav_enabled == nil %}
+    {% assign nav_enabled = true %}
+  {% elsif site.nav_enabled != false and layout.nav_enabled == nil and page.nav_enabled == nil %}
+    {% assign nav_enabled = true %}
+  {% endif %}
+  {% if site.aux_links and nav_enabled == false %}
+    {% include components/aux_nav.html %}
+  {% endif %}
+</div>
