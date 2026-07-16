@@ -6,13 +6,13 @@ url: "https://hadifar.github.io"
 theme: just-the-docs
 
 # Just the Docs settings
-color_scheme: dark
+color_scheme: light
 search_enabled: true
 heading_anchors: true
+logo: "/assets/images/logo.png"
+favicon_ico: "/favicon.ico"
 
-aux_links:
-  "GitHub Repo":
-    - "https://github.com/hadifar/vibe-coding-best-practices"
+
 
 nav_sort: default
 nav_external_links:
@@ -21,3 +21,9 @@ nav_external_links:
 
 plugins:
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: default

@@ -24,4 +24,4 @@ Agentic coding goes a step further: instead of a single prompt → code exchange
 - It shifts the developer's role toward specifying intent, reviewing diffs, and setting guardrails (tests, review, sandboxing).
 - It raises new questions about code quality, security, and how much to trust generated output.
 
-Use the navigation to explore [Tools](tools.html), [Workflows](workflows.html), [Resources](resources.html), and [Others](others.html).
+Use the navigation to explore [Tools](docs/tools.html), [Workflows](docs/workflows.html), [Resources](docs/resources.html), and [Others](docs/others.html).
