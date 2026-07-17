@@ -1,5 +1,5 @@
 ---
-title: "Gstack: An AI engineering workflow"
+title: "Gstack: AI engineering workflow"
 parent: Resources
 nav_order: 2
 description: "Gstack — a collection of SKILL.md files that give AI agents structured roles across the software sprint."
