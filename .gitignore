@@ -3,5 +3,8 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 vendor/
+_inbox/*
+!_inbox/README.md
+.claude/settings.local.json
 .bundle/
 Gemfile.lock

@@ -27,6 +27,11 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+
+exclude:
+  - _inbox/
+  - .claude/
+
 defaults:
   - scope:
       path: "docs"
