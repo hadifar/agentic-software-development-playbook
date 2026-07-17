@@ -8,7 +8,7 @@ layout: minimal
 
 # Gstack: AI engineering workflow
 
-Notes on Garry Tan's AI coding setup.
+This short document explains the AI coding workflow of Y Combinator CEO Garry Tan. He uses [GStack](https://github.com/garrytan/gstack.git) for ideation, building, and deployment.
 
 ## What is gstack
 
