@@ -19,11 +19,3 @@ A quick comparison of tools people use for vibe-coding and agentic coding. Fill 
 | **Windsurf** | IDE | Desktop | "Cascade" agent flow, multi-file edits |
 | **Devin** | Autonomous agent | Cloud sandbox | Longer-running autonomous tasks, less interactive |
 
-## What to evaluate when choosing a tool
-
-- **Context handling** — how well does it understand your whole codebase vs. just open files?
-- **Tool use / agentic loop** — can it run tests, execute shell commands, browse docs on its own?
-- **Editability of trust** — how easy is it to review, diff, and roll back changes?
-- **Extensibility** — hooks, MCP servers, custom subagents/skills.
-- **Cost model** — subscription vs. usage-based API billing.
-
