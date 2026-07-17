@@ -51,3 +51,23 @@ Anything you think is missing is welcome!
    ```
 6. **Open a pull request** against `main` on [GitHub](https://github.com/hadifar/vibe-coding-best-practices), describing what you changed and why.
 
+### Fast contribution!
+
+If you'd rather not hand-write the front matter and file it yourself, use the `/blog`
+Claude Code skill:
+
+1. **Clone the repo** ```bash
+   git clone https://github.com/hadifar/vibe-coding-best-practices.git
+   cd vibe-coding-best-practices
+   ```
+
+2. **Drop a raw draft** into [`_inbox/`](_inbox) as a plain `.txt` or `.md` file. Name it
+   anything (e.g. `my-post-about-vibing.txt`); 
+3. **Run `/blog`** in Claude Code. The skill will:
+   - **Classify** the draft into `docs/tools/`, `docs/workflows/`, or `docs/resources/`.
+   - **Write** a properly formatted post — front matter, next `nav_order`, style matched to
+     the sibling pages.
+   - **Polish** the prose and list suggested improvements it didn't auto-apply.
+   - **Ship** it on a `blog/<slug>` branch and open a pull request for your review. The
+     source draft in `_inbox/` is removed in that same PR.
+
