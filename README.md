@@ -1,15 +1,15 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/images/logo-dark.png">
-    <img src="assets/images/logo.png" alt="Vibe Coding & Agentic Coding logo" width="120">
+    <img src="assets/images/logo.png" alt="Agentic Software Development Playbook logo" width="120">
   </picture>
 </div>
 
-# Vibe Coding & Agentic Coding
+# Agentic Software Development Playbook
 
 [![Deploy Jekyll site to Pages](https://github.com/hadifar/vibe-coding-best-practices/actions/workflows/pages.yml/badge.svg)](https://github.com/hadifar/vibe-coding-best-practices/actions/workflows/pages.yml)
 
-A practical guide to building software by collaborating with AI coding agents — concepts, tool comparisons, workflow patterns, and curated resources.
+A practical guide to agentic software development — building software by collaborating with AI coding agents: concepts, tool comparisons, workflow patterns, and curated resources.
 
 
 ## Contributing

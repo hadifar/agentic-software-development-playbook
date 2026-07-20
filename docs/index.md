@@ -6,7 +6,7 @@ description: "What vibe-coding and agentic coding are, and why they matter."
 permalink: /
 ---
 
-# Vibe Coding & Agentic Coding
+# Agentic Software Development Playbook
 
 A practical guide to building software by collaborating with AI coding agents — what it is, how people actually do it, and what to watch out for.
 
