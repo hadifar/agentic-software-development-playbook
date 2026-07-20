@@ -1,6 +1,6 @@
 ---
 title: Tools
-nav_order: 2
+nav_order: 3
 has_children: true
 description: "A comparison of the current landscape of agentic coding tools."
 ---

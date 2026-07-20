@@ -1,7 +1,7 @@
 ---
 title: "What is MCP (Model Context Protocol)?"
-parent: Workflows
-nav_order: 2
+parent: Building Blocks
+nav_order: 1
 description: "A short explainer of tool-calling and how MCP standardizes it for connecting LLMs to external tools and data."
 layout: minimal
 ---

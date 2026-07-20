@@ -1,6 +1,6 @@
 ---
 title: Resources
-nav_order: 4
+nav_order: 5
 has_children: true
 description: "Curated links for learning more about vibe-coding and agentic coding."
 ---
