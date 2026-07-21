@@ -21,10 +21,17 @@ Here's a simple example of tool-calling in Python with two tools, `bash_tool` an
 
 ```python
 # mock tools
-tools = {
-    "bash_tool": lambda args: "index.html  main.py  styles.css  README.md" if args["command"] == "ls" else "Done",
-    "web_search": lambda args: f"Search results for '{args['query']}': Found documentation."
-}
+def bash_tool(command: str) -> str:
+    """Run a shell command and return its output."""
+    return "index.html  main.py  styles.css  README.md" if command == "ls" else "Done"
+
+
+def web_search(query: str) -> str:
+    """Search the web and return the results."""
+    return f"Search results for '{query}': Found documentation."
+
+
+tools = {"bash_tool": bash_tool, "web_search": web_search}
 
 # Simulates the AI picking a tool based on keywords
 def mock_llm(query):
@@ -45,7 +52,7 @@ while True:
     print(f"AI wants to call: {tool_name}({args})")
 
     # Step 2 & 3: execute the tool and print the output
-    tool_output = tools[tool_name](args)
+    tool_output = tools[tool_name](**args)
     print(f"Tool Output: {tool_output}\n")
 ```
 
