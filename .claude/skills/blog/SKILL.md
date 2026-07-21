@@ -64,15 +64,3 @@ Then, in your reply to the user, list **suggested improvements** you did *not* a
 missing sources, thin sections, structural ideas, unclear claims. Keep it short and
 actionable.
 
-## Step 4 — Ship as a PR
-
-1. Create a branch: `blog/<slug>`.
-2. `git rm` the source draft from `_inbox/` (skip this if the input was inline text).
-3. Stage the new post + the draft removal;`
-4. Push and open a PR with `gh pr create`. The PR body should summarize what the post is,
-   which section it went to and why, and the suggestions from Step 3.
-
-Do **not** push to `main` or merge — the PR is the review gate. GitHub Pages rebuilds on
-merge, so nothing goes live until the user merges.
-
-

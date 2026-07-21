@@ -73,6 +73,43 @@ Many organizations already publish MCP servers, for example:
 - [GitHub MCP server — tools](https://github.com/github/github-mcp-server#tools)
 - [Notion MCP — supported tools](https://developers.notion.com/guides/mcp/mcp-supported-tools#mcp-tools)
 
+## Writing your own MCP server
+
+Here are the same two tools from the tool-calling example above, this time exposed through
+an MCP server using the Python SDK's `FastMCP` helper:
+
+```python
+# my_mcp_server.py
+
+from mcp.server.fastmcp import FastMCP
+
+# Initialize FastMCP server
+mcp = FastMCP("mymcp")
+
+
+@mcp.tool()
+def bash_tool():
+    ...
+
+@mcp.tool()
+def web_search():
+    ...
+
+def main():
+    mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()
+
+# run via: python my_mcp_server.py
+```
+
+The `@mcp.tool()` decorator is what turns a plain Python function into a tool the server
+advertises — any MCP client can then discover both tools and call them the same way. Here
+`transport="stdio"` runs the server as a local process the client launches itself; servers, like above examples, 
+can also be hosted remotely and connected to over HTTP.
+
 ## How do LLMs use MCP?
 
 A good way to understand how an LLM uses MCP is to look at a
@@ -107,6 +144,7 @@ Beyond solving the integration problem, MCP also addresses:
 
 ## References
 
+- [Model Context Protocol — Getting started](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [Stytch — An introduction to the Model Context Protocol](https://stytch.com/blog/model-context-protocol-introduction/)
 - [GitHub — asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)
 - [GitHub MCP server](https://github.com/github/github-mcp-server#tools)
