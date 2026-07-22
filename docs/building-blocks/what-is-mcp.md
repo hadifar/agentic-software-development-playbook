@@ -200,6 +200,24 @@ Beyond solving the integration problem, MCP also addresses:
   explicitly permitted — improving security and compliance, especially in multi-user and
   cloud environments.
 
+## Current limitations
+
+MCP is still young, and a few rough edges show up quickly in practice:
+
+- **Tool definitions eat tokens.** Every connected server's tools are injected into the
+  model's context, so a handful of servers can consume a large slice of the prompt before
+  the user has typed anything — and you pay for it on every turn. Progressive discovery and
+  tool RAG (retrieving only the tools relevant to the current request) reduce the cost, but
+  don't eliminate it.
+- **Tool composition is an open problem.** Picking a single tool is mostly solved; chaining
+  several together to reach a desired result is not. Models still struggle to plan which
+  tools to combine, in what order, and how to thread one tool's output into the next.
+- **Tool descriptions matter more than you'd expect.** You can't simply hand over an
+  existing OpenAPI/Swagger spec and call it an MCP server. A spec written for developers —
+  who bring the surrounding docs, conventions, and intent — reads very differently to a
+  model, which only sees the names, descriptions, and schemas in front of it. Designing an
+  MCP server means deliberately writing tool signatures and descriptions for that reader.
+
 ## References
 
 - [Model Context Protocol — Getting started](https://modelcontextprotocol.io/docs/getting-started/intro)
