@@ -58,7 +58,8 @@ while True:
 
 That's tool-calling in a nutshell: the model picks a tool (e.g. `web_search` or
 `bash_tool`) and supplies the right arguments (e.g. `query: "who won the 2022 World
-Cup"`), the tool is executed — locally or remotely — and the model reads back the result.
+Cup"`), the tool or API is executed — locally or remotely — and the model reads back the
+result.
 
 ## What is MCP?
 
@@ -66,9 +67,10 @@ MCP is a **standardized wrapper around tool-calling** that makes it easier to co
 external APIs, data, and documentation without writing custom integration code for each
 one.
 
-Without MCP, every LLM provider needs its own custom tool definitions for each external
-API or database. Suppose Claude, OpenAI, and Qwen all want to use the `web_search` tool
-above. One might implement it as `web_search(query: str)`, another as
+Without MCP, every LLM provider or AI developer needs their own custom tool definitions
+for each external API or database. Suppose Claude, OpenAI, and Qwen all want to use the `web_search` tool
+above (in the real world, say they all want to use the Google Search API). One might
+implement it as `web_search(query: str)`, another as
 `web_search(query: str, number_of_return_pages: int)` — so each model sees a different
 signature and observes different results. That fragmentation introduces a lot of
 integration headaches.
@@ -80,6 +82,37 @@ Many organizations already publish MCP servers, for example:
 
 - [GitHub MCP server — tools](https://github.com/github/github-mcp-server#tools)
 - [Notion MCP — supported tools](https://developers.notion.com/guides/mcp/mcp-supported-tools#mcp-tools)
+
+## How do LLMs use MCP?
+
+A good way to understand how an LLM uses MCP is to look at a
+[leaked system prompt](https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-fable-5.md).
+It states:
+
+```text
+Claude can connect to external apps and services on behalf of the person through MCP
+Apps... Claude should check its tool list rather than assume. MCP App tools are identified
+by descriptions that begin with the tag [third_party_mcp_app].
+```
+
+The system prompt describes the flow:
+
+1. The model first checks which MCP servers are available and relevant.
+2. If it finds a relevant one, it inspects the tools it contains via their descriptions.
+3. Finally it makes a tool request through the relevant tool.
+
+More specifically, the exchange between the user's session, the server, and the LLM goes
+as follows:
+
+1. The client (your Claude session) calls `tools/list` on the MCP server ("what can you do?").
+2. The server returns JSON describing each tool (name, summary, JSON schema).
+3. The host (Claude Code, Codex) injects that JSON into the model's context.
+4. A user prompt triggers the model, which emits a structured tool call.
+5. The MCP server executes it and the conversation resumes.
+
+Under the hood there are additional tricks. For example, Claude Code and Codex load only
+the MCP servers a user has already activated (Claude Code stores these in `.claude.json`)
+rather than blindly loading everything.
 
 ## Writing your own MCP server
 
@@ -154,26 +187,6 @@ frames them as five questions:
   otherwise you reach for elicitation or MCP app widgets.
 - **What auth does the upstream service use?** An API key is trivial; OAuth, CIMD, or DCR
   flows are where most of the real complexity lands.
-
-## How do LLMs use MCP?
-
-A good way to understand how an LLM uses MCP is to look at a
-[leaked system prompt](https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-fable-5.md).
-It states:
-
-```text
-Claude can connect to external apps and services on behalf of the person through MCP
-Apps... Claude should check its tool list rather than assume. MCP App tools are identified
-by descriptions that begin with the tag [third_party_mcp_app].
-```
-
-The system prompt describes the flow clearly: the model first checks which MCP servers are
-available and relevant; if it finds a relevant one, it inspects the tools it contains via
-their descriptions; and finally it makes a tool request through the relevant tool.
-
-Under the hood there are additional tricks. For example, Claude Code and Codex load only
-the MCP servers a user has already activated (Claude Code stores these in `.claude.json`)
-rather than blindly loading everything.
 
 ## Other advantages of MCP
 

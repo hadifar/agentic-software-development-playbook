@@ -18,3 +18,16 @@ place (or nowhere).
 
 Match the shape and style of existing sibling pages when adding a page — front matter fields,
 heading structure, and a one-sentence `description` are expected on every page.
+
+## Images and media
+
+The site is served under a `baseurl`, so root-absolute paths like `/assets/images/foo.png` work
+locally and 404 in production. Always route image paths through `relative_url`.
+
+- **Location:** `assets/images/<page-slug>/`, matching the page's filename.
+- **Reference:** `![Alt text]({{ '/assets/images/<page-slug>/foo.png' | relative_url }})`.
+- **Sizing or captions:** use HTML — `<img src="{{ … | relative_url }}" alt="…" width="600">`.
+- **Format:** SVG for diagrams, PNG/WebP for screenshots.
+- **Dark mode:** the theme has a light/dark toggle — for diagrams with text, author the SVG with
+  `currentColor` or ship a `-dark` variant (as `logo.png` / `logo-dark.png` do).
+- **Alt text** is required on every image.
