@@ -1,7 +1,8 @@
 ---
 title: "Gstack: AI engineering workflow"
-parent: Tools
-nav_order: 2
+parent: Skills
+grand_parent: Building Blocks
+nav_order: 1
 description: "Gstack — a collection of SKILL.md files that give AI agents structured roles across the software sprint."
 layout: minimal
 ---
