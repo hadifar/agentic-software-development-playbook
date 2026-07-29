@@ -8,3 +8,6 @@ _inbox/*
 .claude/settings.local.json
 .bundle/
 Gemfile.lock
+
+todo.md
+todo.txt
