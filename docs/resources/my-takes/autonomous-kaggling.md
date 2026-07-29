@@ -1,5 +1,5 @@
 ---
-title: Agentic data science
+title: Autonomous Kaggling
 parent: My Takes
 grand_parent: Resources
 nav_order: 1
@@ -7,11 +7,11 @@ description: "Running Karpathy's autoresearch loop on a live Kaggle competition 
 layout: minimal
 ---
 
-# Agentic data science
+# Autonomous Kaggling
 
 I recently started a Kaggle competition and decided to apply
-[autoresearch](https://github.com/karpathy/autoresearch/) to it. I called it Autonomous
-Kaggling: an agent that loops forever to ace the leaderboard.
+[autoresearch](https://github.com/karpathy/autoresearch/) to it: an agent that loops forever
+to ace the leaderboard.
 
 The [Kaggle problem](https://www.kaggle.com/competitions/playground-series-s6e7) is
 student health risk prediction: categorize records into three classes (unhealthy, at-risk,
