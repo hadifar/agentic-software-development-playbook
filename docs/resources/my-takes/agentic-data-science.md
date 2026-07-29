@@ -10,8 +10,10 @@ layout: minimal
 # Agentic data science
 
 I recently started a Kaggle competition and decided to apply
-[autoresearch](https://github.com/karpathy/autoresearch/) to it. The problem —
-[Playground Series S6E7](https://www.kaggle.com/competitions/playground-series-s6e7) — is
+[autoresearch](https://github.com/karpathy/autoresearch/) to it. I called it Autonomous
+Kaggling: an agent that loops forever to ace the leaderboard.
+
+The [Kaggle problem](https://www.kaggle.com/competitions/playground-series-s6e7) is
 student health risk prediction: categorize records into three classes (unhealthy, at-risk,
 fit) from categorical features like `sleep_duration`, `gender`, and `water_intake`.
 
@@ -42,41 +44,39 @@ It also tracked down the
 [original dataset](https://www.kaggle.com/datasets/ziya07/college-student-health-behavior-dataset)
 the competition was derived from and ran a series of augmentations against it.
 
-Both moves are the kind of thing an experienced competitor does. 
+Both moves are the kind of thing an experienced competitor does, and it was very insightful!
 
 **The error analysis was better than I expected.** Unprompted, it computed majority-class
 baselines and estimated a ceiling — establishing what "good" means before chasing it. Then
-it traced the bulk of the residual error to missing values in three decisive fields and
+it traced the bulk of the residual error to missing values in decisive features and
 concluded the problem wasn't recoverable through modeling. That's the correct call; no
 amount of feature engineering fixes information that isn't in the data. Any working data
 scientist would get there. The point is that an LLM got there without being pointed at it.
 
 **It's a good ideation partner.** Several suggestions were new to me. I'm not a
-data-science expert — I know most of the concepts but don't work in the field — and for
-someone in that position it widened the search space faster than I would have alone.
+data-science expert — I know most of the concepts — and for someone in that position it
+widened the search space faster than I could have alone.
 
 ## Where it stalled
 
-**It abandons ideas too early.** The loop proposed data augmentation, saw no improvement in
-balanced accuracy, and discarded it. Reasonable on the evidence. But I looked at the actual
-distribution of the data and the problem wasn't that augmentation was wrong — it was that
-*that particular* strategy was wrong for this distribution. I proposed a different one and
-it worked.
-
-The gap is diagnostic, not generative. The loop proposes and tests well. It's much weaker at
-asking *why* something failed, and whether the failure indicts the approach or just the
-implementation. It reads a negative result as a verdict on the hypothesis when it's often a
-verdict on the execution.
+**It abandons ideas too early.** For example, the loop proposed data augmentation, saw no
+improvement in balanced accuracy, and discarded it. Reasonable! But I looked at the actual
+distribution of the data, and the problem wasn't that augmentation was wrong — it was that
+*that particular* strategy was too naive for this distribution. I proposed a different one
+and it worked.
 
 **Much of the budget goes to the obvious.** A large share of attempts were hyperparameter
 nudges — raising and lowering the learning rate, blending XGBoost with CatBoost. Almost
-certainly the moves most represented in its training data. It explores by frequency rather
-than by expected information gain.
+certainly the moves most represented in its training data.
 
 **My own ideas still moved the score most.** The loop got me to a strong baseline fast; the
-meaningful gains past that came from me looking at the data. That's not a knock — 90
-unsupervised minutes to a strong baseline is most of the tedious work. But it replaces the
-first ninety minutes of the person, not the person.
+meaningful gains past that came from me looking at the data — the data augmentation above
+is one example.
+
+**Instruction-following issues.** I explicitly stated in my `problem.md` file that it should
+loop forever. However, my loop stopped after `1h 38m 10s`. Another pattern I observed is
+that during the loop it sometimes forgot to commit before ideation and jumped straight into
+implementation. So if the goal is reliability, be careful about it.
 
 ## Takeaway
 
