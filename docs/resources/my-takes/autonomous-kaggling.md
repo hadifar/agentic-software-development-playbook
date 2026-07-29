@@ -18,7 +18,7 @@ student health risk prediction: categorize records into three classes (unhealthy
 fit) from categorical features like `sleep_duration`, `gender`, and `water_intake`.
 
 I based my `problem.md` on autoresearch's description with small modifications; it's in
-[hadifar/student-health-risk](https://github.com/hadifar/student-health-risk), along with
+[hadifar/autonomous-kaggling](https://github.com/hadifar/autonomous-kaggling), along with
 the full run. The commit history on the `shr-v1` branch shows what ideas the agent applied
 and where each one landed, and `results.csv` in the root tracks the scores.
 
@@ -93,4 +93,3 @@ my value in this run came from.
 
 - [karpathy/autoresearch](https://github.com/karpathy/autoresearch/)
 - [Kaggle — Playground Series S6E7](https://www.kaggle.com/competitions/playground-series-s6e7)
-- [hadifar/student-health-risk](https://github.com/hadifar/student-health-risk)
