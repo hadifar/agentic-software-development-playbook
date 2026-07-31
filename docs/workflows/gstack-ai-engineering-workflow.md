@@ -1,15 +1,14 @@
 ---
 title: "Gstack: AI engineering workflow"
-parent: Skills
-grand_parent: Building Blocks
-nav_order: 1
+parent: Workflows
+nav_order: 2
 description: "Gstack — a collection of SKILL.md files that give AI agents structured roles across the software sprint."
 layout: minimal
 ---
 
 # Gstack: AI engineering workflow
 
-This short document explains the AI coding workflow of Y Combinator CEO Garry Tan. He uses [GStack](https://github.com/garrytan/gstack.git) for ideation, building, and deployment.
+This post explains the AI coding workflow of Y Combinator CEO. How he uses [GStack](https://github.com/garrytan/gstack.git) for ideation, building, and deployment.
 
 ## What is gstack
 
