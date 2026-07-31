@@ -1,10 +1,8 @@
 ---
 title: My Takes
-parent: Resources
+nav_order: 6
 has_children: true
-nav_order: 3
 description: "First-hand write-ups from running agentic coding tools on real problems."
-layout: minimal
 ---
 
 # My Takes

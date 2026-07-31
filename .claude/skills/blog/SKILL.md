@@ -31,7 +31,7 @@ Pick exactly one destination based on what the draft is *about*:
 If it's genuinely ambiguous, use `AskUserQuestion` to let the user pick — don't guess
 silently. State your reasoning either way.
 
-## Step 2 — Write the post
+## Step 2 — File the post
 
 Create `docs/<section>/<slug>.md`, where `<slug>` is kebab-case from the title.
 

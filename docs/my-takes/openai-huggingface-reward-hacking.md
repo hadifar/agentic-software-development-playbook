@@ -1,7 +1,6 @@
 ---
 title: OpenAI, Hugging Face, and reward hacking as a security incident
 parent: My Takes
-grand_parent: Resources
 nav_order: 2
 description: "An OpenAI security-evaluation agent broke out of its test environment and compromised Hugging Face — a reward-hacking story with real-world consequences."
 layout: minimal
@@ -70,8 +69,6 @@ They fell back to a self-hosted GLM 5.2 to complete the analysis.
 
 Once the analysis was done, Hugging Face closed the vulnerable code paths, rebuilt the
 compromised systems, and rotated credentials and secrets.
-
-
 
 ## References
 

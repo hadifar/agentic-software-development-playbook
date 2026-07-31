@@ -1,7 +1,6 @@
 ---
 title: Autonomous Kaggling
 parent: My Takes
-grand_parent: Resources
 nav_order: 1
 description: "Running Karpathy's autoresearch loop on a live Kaggle competition — what it found on its own, and where it stalled."
 layout: minimal
