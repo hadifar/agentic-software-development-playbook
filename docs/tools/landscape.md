@@ -19,4 +19,5 @@ A quick comparison of tools people use for vibe-coding and agentic coding. Fill 
 | **Windsurf** | IDE | Desktop | "Cascade" agent flow, multi-file edits | [windsurf.com](https://windsurf.com) |
 | **Devin** | Autonomous agent | Cloud sandbox | Longer-running autonomous tasks, less interactive | [devin.ai](https://devin.ai) |
 | **Conductor** | IDE | Desktop (macOS) | Runs multiple agents in parallel, each in its own git worktree | [conductor.build](https://www.conductor.build/) |
+| **goose** | CLI / desktop agent | Terminal, Desktop | Open-source, MCP-based extensions, subagents, recipes, scheduled runs | [goose-docs.ai](https://goose-docs.ai/) |
 
