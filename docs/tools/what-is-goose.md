@@ -1,12 +1,12 @@
 ---
-title: "What is goose?"
+title: "goose: open-source AI agent harness"
 parent: Tools
 nav_order: 4
 description: "goose, an open-source AI agent harness"
 layout: minimal
 ---
 
-# What is goose?
+# goose: an open-source agent harness
 
 [goose](https://goose-docs.ai/) is an open-source AI agent that wraps an LLM in a loop of
 tool calls, so the model can actually do things rather than only describe them. Its own
