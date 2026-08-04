@@ -79,14 +79,9 @@ implementation. So if the goal is reliability, be careful about it.
 
 ## Takeaway
 
-Treat it as a fast, tireless research assistant that covers the obvious ground — baselines,
+Treat it as a fast, tireless junior assistant that covers the obvious ground — baselines,
 error analysis, standard ensembling, hyperparameter sweeps — so your attention goes to the
-parts that need judgment.
-
-Where it needs you is the moment an idea fails. The loop treats a negative result as a
-closed question. Often it isn't: the implementation was wrong, or the data has structure
-nobody has looked at yet. That distinction is the human's job, and it's where nearly all of
-my value in this run came from.
+parts that need judgment & ideation. Very good at execution & not good at ideation!
 
 ## References
 
