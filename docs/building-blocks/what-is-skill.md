@@ -9,8 +9,16 @@ layout: minimal
 # What is a Skill?
 
 A skill is a Markdown file an agent loads on demand to learn how to handle a particular
-kind of request. To see why that matters, it helps to look at what actually reaches the
-model when you send a message.
+kind of request. It's useful when you have a repetitive task and don't want to re-prompt
+your agent each time.
+
+Think of it as the utility function of prompting: instead of duplicating the same
+instructions in every conversation, you write them once and reuse them. Skills are more
+general than that, of course — their behaviour adapts to the request in a way a single
+utility function doesn't.
+
+Before jumping into skills, let's review what the agent actually sees when you enter a
+prompt.
 
 ## What gets sent to the model
 
@@ -26,9 +34,15 @@ travels to the model. Alongside it go:
 
 Some concatenation of the above is passed to the LLM, which then generates a response.
 
-Skills slot into that picture as retrieved items. When you enable a skill — or Claude
-decides to load one — it retrieves one or more `SKILL.md` files that specify what to do in
-a given situation to better fulfil the request.
+Skills slot into that picture as **retrieved items**. When you enable a skill — or Claude
+decides to load one — it loads one or more `SKILL.md` files that specify what to do in a
+given situation to better fulfil the request.
+
+The loading happens in two stages. Initially the agent sees only the **name** and
+**description** of each available skill — nothing else. When the description tells it that a
+skill is needed to fulfil your request, it triggers that skill and loads the entire file
+into its context. From then on, the content of `SKILL.md` travels alongside everything else
+listed above each time you submit a prompt.
 
 ## An example: `dataviz`
 
@@ -38,8 +52,18 @@ In Claude, if you ask:
 draw me a plot which shows y = x^2
 ```
 
-it loads (or asks permission to load) a skill called `dataviz` that instructs Claude to
-complete the request in a certain way. That skill looks roughly like this — see the
+Initially, Claude only sees the name and description:
+
+```text
+/dataviz  Use this skill whenever you are about to create ANY chart, graph, plot,
+          dashboard, or data visualization, in ANY output medium — an HTML or React
+          artifact, inline SVG, plotting code in any library (matplotlib, plotly, d3,
+          Recharts, …)…
+```
+
+That's enough to decide, so it loads (or asks permission to load) the `dataviz` skill,
+which instructs Claude to complete the request in a certain way. The actual content looks
+roughly like this — see the
 [full version](https://gist.github.com/hadifar/2908f52654139ee6391824715fff1909):
 
 ```markdown
@@ -66,11 +90,13 @@ Pick the form. What is the data's job — magnitude, identity, polarity, a singl
 ...
 ```
 
-It's a well-written Markdown file that guides the model on what to do and what not to do.
+It's a well-written text that guides the model on what to do and what not to do.
 It also points to reference files the model can pull in for more detail when needed.
 
 Beyond `dataviz`, Claude ships other skills such as `/debug` and `/doctor`, designed to
-perform an action; you invoke them with `/` followed by the skill name.
+perform an action, which you can invoke directly with `/` followed by the skill name. As
+above, Claude initially sees only their name and description, and loads the actual content
+when one is triggered.
 
 ## Writing your own
 
@@ -86,8 +112,18 @@ a file at:
 Note that it's a *folder*, not a lone file. That means you can include additional resources
 — code, docs, examples — that help the model further, on top of the single `SKILL.md`.
 
+```text
+skill-name/
+├── SKILL.md              # Required: metadata + core instructions (<500 lines)
+├── scripts/              # Executable code (Python/Bash) designed as tiny CLIs
+├── references/           # Supplementary context (schemas, cheatsheets)
+└── assets/               # Templates or static files used in output
+```
+
 For guidance on what makes a skill effective, a solid set of practices is collected in the
 [agentskills.io best practices](https://agentskills.io/skill-creation/best-practices).
+
+
 
 ## Where did the idea come from?
 
@@ -119,3 +155,4 @@ stitching several together is not.
 - [Claude Code — bundled skills](https://code.claude.com/docs/en/skills#bundled-skills)
 - [Metacognitive Capabilities of LLMs (NeurIPS 2024)](https://proceedings.neurips.cc/paper_files/paper/2024/file/2318d75a06437eaa257737a5cf3ab83c-Paper-Conference.pdf)
 - [GitHub — asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks)
+- [GitHub — mgechev/skills-best-practices](https://github.com/mgechev/skills-best-practices)
