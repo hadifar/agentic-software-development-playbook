@@ -10,12 +10,15 @@ permalink: /
 
 A practical guide to building software by collaborating with AI coding agents — what it is, how people actually do it, and what to watch out for.
 
-## What is "vibe coding"?
 
-Coined by Karpathy, *vibe coding* describes a style of programming where you describe what you want in natural language and let an AI model generate the code, iterating conversationally rather than writing every line by hand. You stay in the loop by describing intent, reviewing output, and course-correcting — rather than typing syntax yourself.
+## Start here
 
-## What is "agentic coding"?
+- **New to this?** [Building Blocks]({{ '/docs/building-blocks.html' | relative_url }}) — MCP and Skills, the two pieces
+  every tool is built on.
+- **Picking a tool?** [Tools landscape]({{ '/docs/tools/landscape.html' | relative_url }}) — what runs where, and trade-offs.
+- **Want a process?** [Workflows]({{ '/docs/workflows.html' | relative_url }}) — how to structure the back-and-forth.
+- **Want opinions?** [My Takes]({{ '/docs/my-takes.html' | relative_url }}) — write-ups from running these on real
+  problems, including the ones that failed.
 
-Agentic coding goes a step further: instead of a single prompt → code exchange, an AI **agent** operates in a loop — it can read files, run commands, execute tests, search the web, and use other tools autonomously to accomplish a multi-step task, checking its own work along the way. Tools like Claude Code, Cursor's agent mode, Aider, and Devin operate this way.
 
 
