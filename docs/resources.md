@@ -11,6 +11,11 @@ description: "Curated links for learning more about vibe-coding, agentic coding 
 - Simon Willison's blog — [simonwillison.net](https://simonwillison.net/)
 - Lilian Weng's blog — [lilianweng.github.io](https://lilianweng.github.io/)
 - Drew Breunig's blog — [dbreunig.com](https://www.dbreunig.com/) 
+- Chip Huyen's blog — [huyenchip.com/blog](https://huyenchip.com/blog/)
+
+## Nice books
+
+- Chip Huyen — [*AI Engineering*](https://github.com/chiphuyen/aie-book)
 
 
 
