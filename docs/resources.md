@@ -17,5 +17,9 @@ description: "Curated links for learning more about vibe-coding, agentic coding 
 
 - Chip Huyen — [*AI Engineering*](https://github.com/chiphuyen/aie-book)
 
+## Staying current
+
+- Hugging Face Papers — [huggingface.co/papers](https://huggingface.co/papers) — daily curated AI research
+
 
 
