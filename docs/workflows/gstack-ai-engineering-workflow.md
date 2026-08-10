@@ -12,7 +12,7 @@ This post explains the AI coding workflow of Y Combinator's CEO — how he uses 
 
 ## What is gstack
 
-**gstack** is a collection of `SKILL.md` files that give your AI agents/harness personas for different stages of the
+**gstack** is a collection of `SKILL.md` files that give your AI agents personas for different stages of the
 software/product development life cycle.
 
 A normal software sprint runs through roughly these stages:
