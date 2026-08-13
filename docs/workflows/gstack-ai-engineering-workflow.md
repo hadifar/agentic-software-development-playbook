@@ -85,7 +85,7 @@ the real problem, testing feasibility, and surfacing what might work and what wo
 adapts to your context — a startup concept or a side project — and works through several
 phases. For example, `/office-hours` asks you several questions that depend on your product:
 who said this software/product/idea is interesting? Is it a commercial, learning, or
-entrepreneurship project? Based on your answers, it then suggests a couple of points worth
+entrepreneurship project? It even searches the web to find relevant competitors and identify your differentiator. Based on your answers, it then suggests a couple of points worth
 noting and considering. By answering those questions, your agent can construct better context
 for later stages in the pipeline and development.
 
