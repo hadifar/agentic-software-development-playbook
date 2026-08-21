@@ -31,7 +31,7 @@ changes.
 - **Sizing or captions:** use HTML — `<img src="{{ … | relative_url }}" alt="…" width="600">`.
 - **Format:** SVG for diagrams, PNG/WebP for screenshots.
 - **Dark mode:** Chirpy has a light/dark toggle — for diagrams with text, author the SVG with
-  `currentColor` or ship a `-dark` variant (as `logo.png` / `logo-dark.png` do).
+  `currentColor` or ship a separate `-dark` variant of the image (e.g. `foo.png` / `foo-dark.png`).
 - **Alt text** is required on every image.
 - **Post images:** Chirpy also supports a per-post `image:` front-matter field (social
   preview / header image) — see the theme docs before adding one.

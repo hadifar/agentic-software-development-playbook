@@ -1,8 +1,5 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/images/logo-dark.png">
-    <img src="assets/images/logo.png" alt="Amir Hadifar's blog logo" width="120">
-  </picture>
+  <img src="assets/img/favicons/apple-touch-icon.png" alt="Amir Hadifar's blog logo" width="120">
 </div>
 
 # Amir Hadifar — personal blog

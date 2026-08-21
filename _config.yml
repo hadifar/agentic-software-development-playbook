@@ -20,14 +20,14 @@ github:
   username: hadifar
 
 twitter:
-  username: hadi4r
+  username: hadif4r
 
 social:
   name: Amir Hadifar
   email: hadifar.amir@gmail.com
   fediverse_handle:
   links:
-    - https://twitter.com/hadi4r
+    - https://x.com/hadif4r
     - https://github.com/hadifar
 
 webmaster_verifications:
@@ -61,7 +61,7 @@ theme_mode:
 
 cdn:
 
-avatar: /assets/images/logo.png
+avatar: /assets/img/favicons/apple-touch-icon.png
 
 social_preview_image:
 
