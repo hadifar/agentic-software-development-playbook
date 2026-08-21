@@ -1,0 +1,38 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+@use 'abstracts/variables' as v;
+@use 'abstracts/breakpoints' as bp;
+
+/* Keep the sidebar collapsed on post pages, even on large screens;
+   #sidebar-trigger (topbar) still opens it via the [sidebar-display] attribute
+   that Chirpy's own JS toggles on <body>. */
+body.post-page {
+  @include bp.lg {
+    #sidebar {
+      transform: translateX(-#{v.$sidebar-width});
+    }
+
+    &[sidebar-display] #sidebar {
+      transform: translateX(0);
+    }
+
+    #main-wrapper {
+      margin-left: 0;
+    }
+  }
+}
+
