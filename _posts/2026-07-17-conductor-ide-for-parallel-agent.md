@@ -1,7 +1,8 @@
 ---
 title: "Conductor: IDE to run parallel coding agents"
-layout: page
-permalink: /pages/tools/conductor-ide-for-parallel-agent/
+date: 2026-07-17 00:00:00 +0000
+categories: [Tools]
+tags: [conductor, worktrees, ide]
 description: "Conductor — a desktop app for running multiple AI coding agents in parallel"
 ---
 

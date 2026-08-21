@@ -1,7 +1,8 @@
 ---
 title: "Gstack: AI engineering workflow"
-layout: page
-permalink: /pages/workflows/gstack-ai-engineering-workflow/
+date: 2026-07-31 00:00:00 +0000
+categories: [Workflows]
+tags: [gstack, claude-code, skills]
 description: "Gstack — a collection of SKILL.md files that give AI agents structured roles across the software sprint."
 ---
 

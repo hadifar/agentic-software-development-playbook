@@ -1,7 +1,8 @@
 ---
 title: "goose: open-source AI agent harness"
-layout: page
-permalink: /pages/tools/what-is-goose/
+date: 2026-08-03 00:00:00 +0000
+categories: [Tools]
+tags: [goose, harness, mcp]
 description: "goose, an open-source AI agent harness"
 ---
 
@@ -59,7 +60,7 @@ don't offer out of the box.
 **Pre-built extensions.** Extensions are add-ons that connect goose to the applications and
 tools already in your workflow — adding features, accessing data, or integrating with other
 systems. They're built on the Model Context Protocol (see
-[What is MCP?]({{ '/pages/building-blocks/what-is-mcp/' | relative_url }})), so goose plugs
+[What is MCP?]({{ '/posts/what-is-mcp/' | relative_url }})), so goose plugs
 into a wide ecosystem of existing capabilities.
 
 ## References

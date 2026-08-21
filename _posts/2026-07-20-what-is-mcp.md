@@ -1,7 +1,8 @@
 ---
 title: "What is MCP (Model Context Protocol)?"
-layout: page
-permalink: /pages/building-blocks/what-is-mcp/
+date: 2026-07-20 00:00:00 +0000
+categories: [Building Blocks]
+tags: [mcp, tool-calling, agents]
 description: "A short explainer of tool-calling and how MCP standardizes it for connecting LLMs to external tools and data."
 ---
 

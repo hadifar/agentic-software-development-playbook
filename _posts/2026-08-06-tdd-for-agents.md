@@ -1,7 +1,8 @@
 ---
 title: "TDD for agents"
-layout: page
-permalink: /pages/workflows/tdd-for-agents/
+date: 2026-08-06 00:00:00 +0000
+categories: [Workflows]
+tags: [tdd, testing, agents]
 description: "Using test-driven development as the loop condition for coding agents — write tests first, let the agent iterate until green."
 ---
 
@@ -65,7 +66,7 @@ As with any agentic development, the standard software engineering practices sti
 you ask your agent to "write tests for all functionality and make sure they're green," it will
 probably fail. Break the intent into small, atomic pieces and build the feature up gradually.
 
-This is the same "ask small" advice from the [YC guide to vibe coding]({{ '/pages/resources/yc-guide-to-vibe-coding/' | relative_url }}).
+This is the same "ask small" advice from the [YC guide to vibe coding]({{ '/posts/yc-guide-to-vibe-coding/' | relative_url }}).
 
 ## References
 

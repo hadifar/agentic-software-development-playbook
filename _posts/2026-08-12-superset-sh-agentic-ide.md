@@ -1,13 +1,14 @@
 ---
 title: "superset.sh: IDE to run parallel coding agents"
-layout: page
-permalink: /pages/tools/superset-sh-agentic-ide/
+date: 2026-08-12 00:00:00 +0000
+categories: [Tools]
+tags: [superset, worktrees, ide]
 description: "superset.sh, IDE for running multiple coding agents in isolated git worktrees"
 ---
 
 [superset.sh](https://docs.superset.sh/) is a desktop app for running several AI coding
 agents at once, each in its own isolated workspace. It covers the same ground as
-[Conductor]({{ '/pages/tools/conductor-ide-for-parallel-agent/' | relative_url }}), but
+[Conductor]({{ '/posts/conductor-ide-for-parallel-agent/' | relative_url }}), but
 also runs on Linux (Conductor is Mac-only as of August 2026).
 
 ## What it does
