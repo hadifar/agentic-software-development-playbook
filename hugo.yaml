@@ -1,7 +1,9 @@
 baseURL: "https://hadifar.net/"
-languageCode: en-us
 title: "Amir Hadifar"
 theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 
 pagination:
   pagerSize: 10
@@ -32,12 +34,63 @@ permalinks:
   posts: /posts/:slug/
   categories: /categories/:slug/
 
+languages:
+  en:
+    languageName: "English"
+    languageCode: en-us
+    weight: 1
+    contentDir: content/en
+    params:
+      description: >-
+        Amir Hadifar's personal blog on AI, ML, agents, LLMs, and agentic software development —
+        concepts, tools, workflows, and resources from building with these systems day to day.
+      homeInfoParams:
+        Title: "AI Explorer 🦭"
+        Content: >-
+          Personal blog on AI, ML, agents, LLMs, and agentic software development.
+    menu:
+      main:
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 10
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 20
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 40
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 50
+
+  fa:
+    languageName: "فارسی"
+    languageCode: fa-ir
+    languagedirection: rtl
+    weight: 2
+    contentDir: content/fa
+    params:
+      description: >-
+        وبلاگ شخصی امیر هادیفر درباره هوش مصنوعی، یادگیری ماشین، ایجنت‌ها، مدل‌های زبانی بزرگ
+        و توسعه نرم‌افزار ایجنتیک.
+      homeInfoParams:
+        Title: "کاوشگر هوش مصنوعی 🦭"
+        Content: >-
+          وبلاگ شخصی درباره هوش مصنوعی، یادگیری ماشین، ایجنت‌ها، مدل‌های زبانی بزرگ و توسعه نرم‌افزار ایجنتیک.
+    menu:
+      main:
+        - identifier: categories
+          name: دسته‌بندی‌ها
+          url: /categories/
+          weight: 20
+
 params:
   env: production
   title: "Amir Hadifar"
-  description: >-
-    Amir Hadifar's personal blog on AI, ML, agents, LLMs, and agentic software development —
-    concepts, tools, workflows, and resources from building with these systems day to day.
   keywords: [Blog, AI, ML, LLM, Agents, Agentic Software Development]
   author: "Amir Hadifar"
 
@@ -60,18 +113,19 @@ params:
   showtoc: true
   UseHugoToc: true
 
-  homeInfoParams:
-    Title: "AI Explorer 🦭"
-    Content: >-
-      Personal blog on AI, ML, agents, LLMs, and agentic software development.
-
   socialIcons:
     - name: github
       url: "https://github.com/hadifar"
     - name: x
       url: "https://x.com/hadif4r"
+    - name: linkedin
+      url: "https://linkedin.com/in/hadif4r"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=vESJYOsAAAAJ"
+    - name: stackoverflow
+      url: "https://stackoverflow.com/users/1462770/amir"
     - name: email
-      url: "mailto:hadifar.amir@gmail.com"
+      url: "mailto:lastname.firstname@gmail.com"
 
   assets:
     favicon: "/favicons/favicon.ico"
@@ -88,25 +142,6 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-
-menu:
-  main:
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 20
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 50
 
 markup:
   highlight:
