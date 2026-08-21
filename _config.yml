@@ -19,13 +19,14 @@ github:
   username: hadifar
 
 twitter:
-  username:
+  username: hadi4r
 
 social:
   name: Amir Hadifar
   email: hadifar.amir@gmail.com
   fediverse_handle:
   links:
+    - https://twitter.com/hadi4r
     - https://github.com/hadifar
 
 webmaster_verifications:
