@@ -1,0 +1,21 @@
+.terms-tags a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px 8px;
+}
+
+.terms-tags .term-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.4em;
+    height: 1.4em;
+    padding: 0 5px;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--theme);
+    background: var(--secondary);
+    border-radius: 999px;
+}
