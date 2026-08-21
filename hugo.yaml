@@ -68,7 +68,7 @@ languages:
           weight: 50
 
   fa:
-    languageName: "فارسی"
+    languageName: "fa"
     languageCode: fa-ir
     languagedirection: rtl
     weight: 2
@@ -80,13 +80,8 @@ languages:
       homeInfoParams:
         Title: "کاوشگر هوش مصنوعی 🦭"
         Content: >-
-          وبلاگ شخصی درباره هوش مصنوعی، یادگیری ماشین، ایجنت‌ها، مدل‌های زبانی بزرگ و توسعه نرم‌افزار ایجنتیک.
-    menu:
-      main:
-        - identifier: categories
-          name: دسته‌بندی‌ها
-          url: /categories/
-          weight: 20
+          وبلاگ شخصی درباره هوش مصنوعی، یادگیری ماشین، ایجنت‌ها، مدل‌های زبانی بزرگ و توسعه نرم‌افزار.
+  
 
 params:
   env: production
@@ -105,12 +100,12 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  ShowToc: true
+  ShowToc: false
   TocOpen: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: true
+  showtoc: false
   UseHugoToc: true
 
   socialIcons:
