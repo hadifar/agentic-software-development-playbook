@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "just-the-docs"
+gem "jekyll-theme-chirpy", "~> 7.6"
 
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+  gem "jekyll-archives"
 end

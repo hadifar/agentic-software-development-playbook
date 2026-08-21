@@ -27,22 +27,35 @@ Anything you think is missing is welcome!
    ```
 3. **Install dependencies and run the site locally** so you can preview your edits.
    ```bash
-   bundle install --path vendor/bundle
+   bundle config set path 'vendor/bundle'
+   bundle install
    bundle exec jekyll serve
    ```
-   Then open http://localhost:4000/agentic-software-development-playbook/
-4. **Edit or add a page** under [`docs/`](docs). Pages are Markdown files with Just the Docs front matter, for example:
-   ```yaml
-   ---
-   title: Page title
-   parent: Tools        
-   nav_order: 1
-   description: "One-sentence summary of the page."
-   layout: minimal
-   ---
-   ```
-   - Top-level sections (`Intro`, `Tools`, `Workflows`, `Resources`) live directly in `docs/`.
-   - Sub-pages live in a matching subfolder (e.g. `docs/tools/landscape.md`) and set `parent:` to the section title.
+   Then open http://localhost:4000/
+4. **Add a blog post or a reference page.**
+   - **Blog post** (a write-up, opinion, or "here's what I tried") — add
+     `_posts/YYYY-MM-DD-title.md`:
+     ```yaml
+     ---
+     title: Post title
+     date: YYYY-MM-DD 00:00:00 +0000
+     categories: [My Takes]
+     tags: [agents]
+     description: "One-sentence summary of the post."
+     ---
+     ```
+   - **Reference page** (a durable how-to under Building Blocks / Tools / Workflows /
+     Resources) — add `pages/<section>/<slug>.md`:
+     ```yaml
+     ---
+     title: Page title
+     layout: page
+     permalink: /pages/<section>/<slug>/
+     description: "One-sentence summary of the page."
+     ---
+     ```
+     Then link to it from that section's tab at `_tabs/<section>.md` — pages aren't
+     auto-discovered.
 5. **Commit and push**
    ```bash
    git add .
@@ -65,9 +78,10 @@ Claude Code skill:
 2. **Drop a raw draft** into [`_inbox/`](_inbox) as a plain `.txt` or `.md` file. Name it
    anything (e.g. `my-post-about-vibing.txt`).
 3. **Run `/blog`** in Claude Code. The skill will:
-   - **Classify** the draft into `docs/tools/`, `docs/workflows/`, or `docs/resources/`.
-   - **Write** a properly formatted post — front matter, next `nav_order`, style matched to
-     the sibling pages.
+   - **Classify** the draft as a blog post (`_posts/`) or a reference page
+     (`pages/<section>/`).
+   - **Write** a properly formatted post — front matter, style matched to sibling posts or
+     pages, linked from the section tab if it's a reference page.
    - **Polish** the prose and list suggested improvements it didn't auto-apply.
    - **Ship** it on a `blog/<slug>` branch and open a pull request for your review. The
      source draft in `_inbox/` is removed in that same PR.
