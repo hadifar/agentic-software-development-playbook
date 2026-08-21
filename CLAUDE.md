@@ -8,14 +8,14 @@ no separate reference-page tabs.
 
 - Posts live in `content/posts/` as `<slug>.md`.
 - Front matter: `title`, `date` (`YYYY-MM-DD`), `description`, `categories: [<Category>]`,
-  `tags: [tag-one, tag-two]`, `draft: false`, `slug: <slug>` (must match the filename — it
-  pins the post's URL to `/posts/<slug>/` regardless of title changes later).
+  `draft: false`, `slug: <slug>` (must match the filename — it pins the post's URL to
+  `/posts/<slug>/` regardless of title changes later). No `tags` field — this site only uses
+  categories.
 - `categories` is a flat list, one of: `Tools`, `Building Blocks`, `My Takes`,
   `Agentic Software Dev`, `Resources`. Reuse an existing category unless the post genuinely
   doesn't fit any — check `content/posts/*.md` for what's already in use before inventing a
   new one.
-- Shows up automatically in the home feed, its category archive page, the Archives page, and
-  each tag on the Tags page.
+- Shows up automatically in the home feed, its category archive page, and the Archives page.
 
 Match the shape and style of existing sibling posts when adding one — front matter fields,
 heading structure, and a one-sentence `description` are expected on every post.

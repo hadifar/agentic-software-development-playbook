@@ -3,7 +3,6 @@ title: "superset.sh: IDE to run parallel coding agents"
 date: 2026-08-12
 description: "superset.sh, IDE for running multiple coding agents in isolated git worktrees"
 categories: [Tools]
-tags: [superset, worktrees, ide]
 draft: false
 slug: superset-sh-agentic-ide
 ---

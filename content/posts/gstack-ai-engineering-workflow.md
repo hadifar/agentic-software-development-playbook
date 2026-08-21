@@ -3,7 +3,6 @@ title: "Gstack: AI engineering workflow"
 date: 2026-07-31
 description: "Gstack — a collection of SKILL.md files that give AI agents structured roles across the software sprint."
 categories: [Agentic Software Dev]
-tags: [gstack, claude-code, skills]
 draft: false
 slug: gstack-ai-engineering-workflow
 ---

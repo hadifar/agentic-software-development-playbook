@@ -34,7 +34,6 @@ title: Post title
 date: YYYY-MM-DD
 description: "One-sentence summary of the post."
 categories: [Tools]
-tags: [agents]
 draft: false
 slug: my-post-slug
 ---

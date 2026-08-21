@@ -3,7 +3,6 @@ title: "What is a Skill?"
 date: 2026-07-31
 description: "How skills fit into an LLM's context, what a SKILL.md file looks like, and how to write your own."
 categories: [Building Blocks]
-tags: [skills, claude-code, agents]
 draft: false
 slug: what-is-a-skill
 ---

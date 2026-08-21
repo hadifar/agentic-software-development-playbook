@@ -3,7 +3,6 @@ title: Organize your skills
 date: 2026-08-20
 description: "How to package skills into plugins, load them automatically, and share versioned releases with a marketplace."
 categories: [Agentic Software Dev]
-tags: [claude-code, plugins, skills]
 draft: false
 slug: organize-your-skills
 ---

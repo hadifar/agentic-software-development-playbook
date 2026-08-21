@@ -3,7 +3,6 @@ title: "goose: open-source AI agent harness"
 date: 2026-08-03
 description: "goose, an open-source AI agent harness"
 categories: [Tools]
-tags: [goose, harness, mcp]
 draft: false
 slug: what-is-goose
 ---

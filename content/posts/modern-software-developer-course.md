@@ -3,7 +3,6 @@ title: "The Modern Software Developer course"
 date: 2026-07-20
 description: "Notes on Stanford CS146S, a course covering agentic coding, prompting techniques, AI IDEs, and patterns."
 categories: [Resources]
-tags: [course, stanford]
 draft: false
 slug: modern-software-developer-course
 ---
