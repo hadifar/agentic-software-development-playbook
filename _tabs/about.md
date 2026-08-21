@@ -3,7 +3,7 @@ icon: fas fa-info-circle
 order: 6
 ---
 
-# Amir Hadifar
+# Amir Hadifar's personal blog 🦭
 
 Personal blog on AI, ML, agents, LLMs, and agentic software development — building software by collaborating with AI coding agents: what it is, how people actually do it, and what to watch out for.
 
