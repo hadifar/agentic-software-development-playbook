@@ -11,7 +11,7 @@ ShowBreadCrumbs: false
 
 I am a Machine Learning Engineer at Nokia, where I focus on exploring the field of AI/ML.
 
-```
+```text {linenos=false}
            @@@@@@@@@@@@@                                    
         @@@%           @@@                                  
       %@@                @@@                                
