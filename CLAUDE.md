@@ -2,29 +2,23 @@
 
 ## Content architecture
 
-This site runs the `jekyll-theme-chirpy` gem theme. Two content types, two different rules —
-get the type right or the page lands in the wrong place (or nowhere).
+This site runs the `jekyll-theme-chirpy` gem theme. Everything is a blog post — there are no
+separate reference-page tabs.
 
-**Blog posts** — narrative write-ups, opinions, incident reviews (the "My Takes" and similar
-one-off pieces):
-- Live in `_posts/` as `YYYY-MM-DD-title.md`, dated by the post's actual origin.
-- Front matter: `title`, `date` (`YYYY-MM-DD HH:MM:SS +0000`), `categories: [Category]`,
+- Posts live in `_posts/` as `YYYY-MM-DD-title.md`, dated by the post's actual origin.
+- Front matter: `title`, `date` (`YYYY-MM-DD HH:MM:SS +0000`), `categories: [Work, <Sub>]`,
   `tags: [tag-one, tag-two]`, `description`. No `layout` needed — `_config.yml` defaults
   posts to `layout: post`.
-- Shows up automatically in the home feed, its category archive, and each tag archive.
+- `categories` is two levels: the top level is `Work` for anything career/tech-related (a
+  future `Life` category exists for personal posts). The second element is the sub-category:
+  `Tools`, `Building Blocks`, `My Takes`, `Agentic Software Dev`, or `Resources`. Reuse an
+  existing sub-category unless the post genuinely doesn't fit any — check `_posts/*.md` for
+  what's already in use before inventing a new one.
+- Shows up automatically in the home feed, its category archive (nested under Work on the
+  Categories tab), the Archives tab, and each tag on the Tags tab.
 
-**Reference pages** — durable how-tos and comparisons grouped under a section (Building
-Blocks, Tools, Workflows, Resources):
-- Each section is one file in `_tabs/` (e.g. `_tabs/tools.md`) — this is what puts it in the
-  sidebar. Set `title`, `icon` (a Font Awesome class), `order`, `description`. Body of the
-  tab is a short intro plus a bullet list linking to that section's detail pages.
-- Detail pages live under `pages/<section>/<slug>.md` (e.g. `pages/tools/landscape.md`), with
-  `layout: page` and an explicit `permalink: /pages/<section>/<slug>/`.
-- Adding a detail page means editing its section's `_tabs/<section>.md` to link to it — tabs
-  don't auto-discover children the way `_posts/` does.
-
-Match the shape and style of existing sibling pages when adding one — front matter fields,
-heading structure, and a one-sentence `description` are expected on every page.
+Match the shape and style of existing sibling posts when adding one — front matter fields,
+heading structure, and a one-sentence `description` are expected on every post.
 
 ## Images and media
 
@@ -49,3 +43,7 @@ bundle config set path 'vendor/bundle'   # once, keeps gems out of the system pa
 bundle install
 bundle exec jekyll build                 # or `jekyll serve` while iterating
 ```
+
+Note: `jekyll serve`'s file watcher does NOT reload `_config.yml` — restart the server after
+editing site config (title, tagline, description, etc.), or you'll see stale values mixed
+with hot-reloaded content changes.
