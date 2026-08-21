@@ -1,7 +1,7 @@
 ---
 title: "goose: open-source AI agent harness"
 date: 2026-08-03 00:00:00 +0000
-categories: [Tools]
+categories: [Work, Tools]
 tags: [goose, harness, mcp]
 description: "goose, an open-source AI agent harness"
 ---

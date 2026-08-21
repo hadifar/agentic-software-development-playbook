@@ -1,7 +1,7 @@
 ---
 title: Autonomous Kaggling
 date: 2026-07-31 00:00:00 +0000
-categories: [Workflows]
+categories: [Work, My Takes]
 tags: [agents, kaggle, autoresearch]
 description: "Running Karpathy's autoresearch loop on a live Kaggle competition — what it found on its own, and where it stalled."
 ---

@@ -1,7 +1,7 @@
 ---
 title: YC guide to vibe coding
 date: 2026-07-16 00:00:00 +0000
-categories: [Resources]
+categories: [Work, Resources]
 tags: [yc, vibe-coding]
 description: "YC guide on practical vibe-coding technique."
 ---

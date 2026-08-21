@@ -1,7 +1,7 @@
 ---
 title: Tools landscape
 date: 2026-07-16 00:00:00 +0000
-categories: [Tools]
+categories: [Work, Tools]
 tags: [comparison, cli, ide]
 description: "A comparison of the current landscape of agentic coding tools."
 ---

@@ -1,7 +1,7 @@
 ---
 title: Organize your skills
 date: 2026-08-20 00:00:00 +0000
-categories: [Workflows]
+categories: [Work, Agentic Software Dev]
 tags: [claude-code, plugins, skills]
 description: "How to package skills into plugins, load them automatically, and share versioned releases with a marketplace."
 ---

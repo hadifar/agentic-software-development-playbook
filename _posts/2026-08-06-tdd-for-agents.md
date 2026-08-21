@@ -1,7 +1,7 @@
 ---
 title: "TDD for agents"
 date: 2026-08-06 00:00:00 +0000
-categories: [Workflows]
+categories: [Work, Agentic Software Dev]
 tags: [tdd, testing, agents]
 description: "Using test-driven development as the loop condition for coding agents — write tests first, let the agent iterate until green."
 ---

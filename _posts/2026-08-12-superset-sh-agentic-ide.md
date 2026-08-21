@@ -1,7 +1,7 @@
 ---
 title: "superset.sh: IDE to run parallel coding agents"
 date: 2026-08-12 00:00:00 +0000
-categories: [Tools]
+categories: [Work, Tools]
 tags: [superset, worktrees, ide]
 description: "superset.sh, IDE for running multiple coding agents in isolated git worktrees"
 ---
