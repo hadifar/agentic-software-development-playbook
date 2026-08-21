@@ -16,7 +16,7 @@ buildFuture: false
 buildExpired: false
 pygmentsUseClasses: true
 
-googleAnalytics: ""
+googleAnalytics: "G-5GD2CF0WKN"
 
 minify:
   disableXML: true
@@ -91,10 +91,10 @@ params:
 
   defaultTheme: auto
   disableThemeToggle: false
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
   displayFullLangName: true
-  ShowPostNavLinks: true
+  ShowPostNavLinks: false
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
