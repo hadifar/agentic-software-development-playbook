@@ -6,12 +6,13 @@ lang: en
 
 timezone:
 
-title: Amir Hadifar's personal blog 🦭
+title: Amir Hadifar
 
-tagline: Personal blog on AI, ML, agents, LLMs, and agentic software development
+tagline: My personal blog 🦭
 
 description: >-
-  Amir Hadifar's personal blog 🦭
+  Amir Hadifar's personal blog on AI, ML, agents, LLMs, and agentic software development —
+  concepts, tools, workflows, and resources from building with these systems day to day.
 
 url: "https://hadifar.net"
 
