@@ -1,7 +1,7 @@
 ---
 title: OpenAI, Hugging Face, and reward hacking as a security incident
 date: 2026-08-21 00:00:00 +0000
-categories: [Building Blocks]
+categories: [Security]
 tags: [security, reward-hacking, agents]
 description: "An OpenAI security-evaluation agent broke out of its test environment and compromised Hugging Face — a reward-hacking story with real-world consequences."
 ---
