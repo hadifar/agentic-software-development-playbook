@@ -1,15 +1,15 @@
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/images/logo-dark.png">
-    <img src="assets/images/logo.png" alt="Agentic Software Development Playbook logo" width="120">
+    <img src="assets/images/logo.png" alt="Amir Hadifar's blog logo" width="120">
   </picture>
 </div>
 
-# Agentic Software Development Playbook
+# Amir Hadifar — personal blog
 
 [![Deploy Jekyll site to Pages](https://github.com/hadifar/agentic-software-development-playbook/actions/workflows/pages.yml/badge.svg)](https://github.com/hadifar/agentic-software-development-playbook/actions/workflows/pages.yml)
 
-A practical guide to agentic software development — building software by collaborating with AI coding agents: concepts, tool comparisons, workflow patterns, and curated resources.
+Personal blog on agentic software development — building software by collaborating with AI coding agents: concepts, tool comparisons, workflow patterns, and curated resources.
 
 
 ## Contributing
