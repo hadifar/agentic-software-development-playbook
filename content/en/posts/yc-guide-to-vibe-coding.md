@@ -1,7 +1,6 @@
 ---
 title: YC guide to vibe coding
 date: 2026-07-16
-description: "YC guide on practical vibe-coding technique."
 categories: [Resources]
 draft: false
 slug: yc-guide-to-vibe-coding

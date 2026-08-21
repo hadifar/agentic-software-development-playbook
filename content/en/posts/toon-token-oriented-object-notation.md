@@ -1,7 +1,6 @@
 ---
 title: "Token-Oriented Object Notation: An Alternative to JSON?"
 date: 2025-11-27
-description: "TOON promises lossless JSON/YAML compression optimized for LLM prompts — fewer tokens, lower cost. I dug into the claims and I'm skeptical of the accuracy numbers, even though the token savings are real."
 categories: [My Takes]
 draft: false
 slug: toon-token-oriented-object-notation

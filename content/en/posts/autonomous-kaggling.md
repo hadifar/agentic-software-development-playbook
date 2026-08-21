@@ -1,7 +1,6 @@
 ---
 title: Autonomous Kaggling
 date: 2026-07-31
-description: "Running Karpathy's autoresearch loop on a live Kaggle competition — what it found on its own, and where it stalled."
 categories: [My Takes]
 draft: false
 slug: autonomous-kaggling

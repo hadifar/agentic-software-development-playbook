@@ -7,18 +7,19 @@ theme (vendored as a git submodule at `themes/PaperMod`). Everything is a blog p
 no separate reference-page tabs.
 
 - Posts live in `content/en/posts/` as `<slug>.md`.
-- Front matter: `title`, `date` (`YYYY-MM-DD`), `description`, `categories: [<Category>]`,
-  `draft: false`, `slug: <slug>` (must match the filename — it pins the post's URL to
-  `/posts/<slug>/` regardless of title changes later). No `tags` field — this site only uses
-  categories.
+- Front matter: `title`, `date` (`YYYY-MM-DD`), `categories: [<Category>]`, `draft: false`,
+  `slug: <slug>` (must match the filename — it pins the post's URL to `/posts/<slug>/`
+  regardless of title changes later). No `tags` field — this site only uses categories.
+  No `description` field either — PaperMod auto-generates feed excerpts and the meta
+  description tag from post content.
 - `categories` is a flat list, one of: `Tools`, `Building Blocks`, `My Takes`,
   `Agentic Software Dev`, `Resources`. Reuse an existing category unless the post genuinely
   doesn't fit any — check `content/posts/*.md` for what's already in use before inventing a
   new one.
 - Shows up automatically in the home feed, its category archive page, and the Archives page.
 
-Match the shape and style of existing sibling posts when adding one — front matter fields,
-heading structure, and a one-sentence `description` are expected on every post.
+Match the shape and style of existing sibling posts when adding one — front matter fields and
+heading structure are expected on every post.
 
 ## Languages
 
@@ -28,8 +29,8 @@ language switcher in the header) but has no translated content yet — `content/
 
 To add a Persian translation of a page, create the matching file under `content/fa/` (e.g.
 `content/fa/posts/<slug>.md` for a post already at `content/en/posts/<slug>.md`) with the same
-front matter shape, translated `title`/`description`, and the same `slug` — PaperMod will then
-link the two as translations of each other and the per-page language switcher lights up.
+front matter shape, a translated `title`, and the same `slug` — PaperMod will then link the two
+as translations of each other and the per-page language switcher lights up.
 Categories are per-language; a Persian post needs Persian category names, and there's no
 existing convention for those yet, so ask before inventing one.
 

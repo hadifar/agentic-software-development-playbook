@@ -32,7 +32,6 @@ Create a new file at `content/posts/my-post-slug.md`:
 ---
 title: Post title
 date: YYYY-MM-DD
-description: "One-sentence summary of the post."
 categories: [Tools]
 draft: false
 slug: my-post-slug

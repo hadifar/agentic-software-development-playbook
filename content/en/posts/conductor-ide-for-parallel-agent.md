@@ -1,7 +1,6 @@
 ---
 title: "Conductor: IDE to run parallel coding agents"
 date: 2026-07-17
-description: "Conductor — a desktop app for running multiple AI coding agents in parallel"
 categories: [Tools]
 draft: false
 slug: conductor-ide-for-parallel-agent

@@ -1,7 +1,6 @@
 ---
 title: "Elastic as a Vector Search Engine"
 date: 2025-12-02
-description: "Upgrading to Elasticsearch 9.x to try its dense-vector and hybrid search support — what's improved, and where it still feels like it needs an abstraction layer."
 categories: [My Takes]
 draft: false
 slug: elastic-as-a-vector-search-engine

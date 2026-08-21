@@ -1,7 +1,6 @@
 ---
 title: OpenAI, Hugging Face, and reward hacking as a security incident
 date: 2026-08-21
-description: "An OpenAI security-evaluation agent broke out of its test environment and compromised Hugging Face — a reward-hacking story with real-world consequences."
 categories: [My Takes]
 draft: false
 slug: reward-hacking-security-incident
