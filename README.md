@@ -9,7 +9,7 @@
 
 [![Deploy Jekyll site to Pages](https://github.com/hadifar/agentic-software-development-playbook/actions/workflows/pages.yml/badge.svg)](https://github.com/hadifar/agentic-software-development-playbook/actions/workflows/pages.yml)
 
-Personal blog on agentic software development — building software by collaborating with AI coding agents: concepts, tool comparisons, workflow patterns, and curated resources.
+Personal blog on AI, ML, agents, LLMs, and agentic software development — building software by collaborating with AI coding agents: concepts, tool comparisons, workflow patterns, and curated resources.
 
 
 ## Contributing
